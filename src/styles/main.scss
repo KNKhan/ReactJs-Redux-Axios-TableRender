@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+
+$main-bg-color: #f1f2f0;
+$blue: #8ad2eb;
+$black: #35342f;
+$white: #ffffff;
+
+@mixin panel($bgcolor, $padding, $margin) {
+  background: $bgcolor;
+  padding: $padding;
+  margin: $margin;
+}
+
+body {
+  background-color: $blue;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+
+.app-container {
+  padding-top: 2em;
+}
+
+.app-heading {
+  font-size: 2em;
+  text-align: center;
+}
+
+.app-table {
+  @include panel($white, 20px, 30px auto 0 auto);
+}
+
